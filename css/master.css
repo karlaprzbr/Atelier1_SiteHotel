@@ -7,3 +7,131 @@ a {
 a:hover {
   color: black;
 }
+
+.li-no-style{
+    list-style-type: none;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  padding: 15px;
+  z-index: 2;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px;
+}
+
+header .icon{
+    width: 35px;
+}
+
+/* NAV */
+
+#nav {
+  display: none;
+  float: left;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  height: 100%;
+  width: 20%;
+  text-align: left;
+  z-index: 3;
+  position: fixed;
+}
+
+#nav .icon{
+    width: 35px;
+}
+
+#nav li {
+    padding: 10px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#nav a {
+    color: white;
+}
+
+/* MAIN */
+
+main {
+  grid-column:1;
+  grid-row: 2;
+  padding: 50px 0;
+  text-align: center;
+}
+
+main h2 {
+  margin: 50px 0;
+}
+
+main img {
+  width: 200px;
+}
+
+.leftContent {
+  text-align: left;
+}
+
+.rightContent {
+  text-align: right;
+}
+
+/* FOOTER */
+
+footer {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: black;
+  color: white;
+}
+
+footer a {
+    color: white;
+}
+
+#footer-list li {
+    padding: 12px 2px;
+}
+
+footer form {
+    height: 25px;
+}
+
+footer label {
+    margin-right: 20px;
+}
+
+footer input {
+    border: none;
+}
+
+footer input:last-child {
+    background-color: #9a8067;
+    font-weight: bolder;
+}
+
+footer .icon {
+    width: 35px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESTAURANT */
+
+/* MAIN */
