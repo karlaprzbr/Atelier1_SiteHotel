@@ -60,13 +60,12 @@ header .icon{
 /* MAIN */
 
 main {
-  grid-column:1;
-  grid-row: 2;
   padding: 50px 0;
 }
 
 main h2 {
   margin: 50px auto;
+  font-family: 'Roboto Slab', serif;
 }
 
 main img {
@@ -75,6 +74,103 @@ main img {
 
 main a {
   text-decoration: underline;
+}
+
+main .deg-entrees {
+  height: 400px;
+  background-image: url("../img/gastronomique_entree.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.8;
+}
+
+main .deg-plats {
+  height: 400px;
+  background-image: url("../img/gastronomique_plat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.8;
+  margin-top: 100px;
+}
+
+main .deg-desserts {
+  height: 400px;
+  background-image: url("../img/gastronomique_dessert.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.8;
+  margin-top: 100px;
+}
+
+main .res-entrees {
+  height: 400px;
+  background-image: url("../img/restaurant_entree.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.8;
+}
+
+main .res-plats {
+  height: 400px;
+  background-image: url("../img/restaurant_plat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.8;
+  margin-top: 100px;
+}
+
+main .res-desserts {
+  height: 400px;
+  background-image: url("../img/restaurant_dessert.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.8;
+  margin-top: 100px;
+}
+
+main .cocktails {
+  height: 400px;
+  background-image: url("../img/cocktails.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.8;
+}
+
+main .bieres {
+  height: 400px;
+  background-image: url("../img/bieres.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.8;
+  margin-top: 100px;
+}
+
+main .vins {
+  height: 400px;
+  background-image: url("../img/vins.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.8;
+  margin-top: 100px;
+}
+
+main h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 50px;
+}
+
+.carte_titre {
+  position: relative;
+  top:-230px;
 }
 
 /* FOOTER */
