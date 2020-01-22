@@ -2,11 +2,13 @@
 <html lang="fr">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<!-- <link rel="stylesheet" href="css/style.css"/> -->
 		<link rel="stylesheet" href="css/master.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/c1424763f3.js" crossorigin="anonymous"></script>
 
 	</head>
 	<body>
@@ -21,14 +23,14 @@
 			<a href="#">
 				<img src="img/cross.png" alt="cross_icon" class="icon" id="cross">
 			</a>
-			<ul class="li-no-style">
+			<ul class="list-unstyled">
 				<li><input type="text" placeholder="Recherche..."></li>
-				<li><a href="">L'HÔTEL</a></li>
+				<li><a href="hotel.html">L'HÔTEL</a></li>
 				<li><a href="">CHAMBRES</a></li>
 				<li><a href="restaurant.html">RESTAURANT</a></li>
 				<li><a href="">SPA</a></li>
 				<li><a href="">RÉSERVATION</a></li>
-				<li><a href="">AVIS</a></li>
+				<li><a href="avis.html">AVIS</a></li>
 				<li><a href="">ACUTALITÉS</a></li>
 			</ul>
 		</div>
@@ -40,7 +42,7 @@
 			</div>
 			<div class="carte cocktails d-flex align-items-center justify-content-center"></div>
 			<div class="container">
-				<h3 class="font-weight-bolder carte_titre text-center">Cocktails</h3>
+				<h3 class="font-weight-bolder titreCarteRest text-center">Cocktails</h3>
 				<div class="row d-flex justify-content-center">
 					<dl class="">
 						<dt>HOT BUTTERED RUM</dt>
@@ -58,7 +60,7 @@
 			</div>
 			<div class="carte bieres"></div>
 			<div class="container">
-				<h3 class="font-weight-bolder carte_titre text-center">Bières</h3>
+				<h3 class="font-weight-bolder titreCarteRest text-center">Bières</h3>
 				<div class="row d-flex justify-content-center">
 					<dl>
 						<dt class="text-uppercase">Dale's Pale Ale</dt>
@@ -76,7 +78,7 @@
 			</div>
 			<div class="carte vins"></div>
 			<div class="container">
-				<h3 class="font-weight-bolder carte_titre text-center">Vins</h3>
+				<h3 class="font-weight-bolder titreCarteRest text-center">Vins</h3>
 				<div class="row d-flex justify-content-center">
 					<dl class="">
 						<dt>DEVLINS MOUNT SHIRAZ</dt>
@@ -90,32 +92,41 @@
 			</div>
 		</main>
 
-		<footer>
-			<ul class="d-flex justify-content-center li-no-style" id="footer-list">
-				<li><a href="">L'HÔTEL |</a></li>
-				<li><a href="">CHAMBRES |</a></li>
-				<li><a href="">RESTAURANT |</a></li>
-				<li><a href="">SPA |</a></li>
-				<li><a href="">RÉSERVATION |</a></li>
-				<li><a href="">AVIS |</a></li>
-				<li><a href="">ACTUALITÉS</a></li>
-			</ul>
-			<div class="d-flex justify-content-center align-items-baseline">
-				<form class="d-inline-flex">
-					<label>Inscrivez-vous à notre newsletter</label>
-					<input type="email">
-					<input type="submit" value="VALIDER">
-				</form>
-				<ul class="d-inline-flex li-no-style">
-					<li><a><img src="img/facebook.png" class="icon"></a></li>
-					<li><a><img src="img/insta.png" class="icon"></a></li>
-					<li><a><img src="img/twitter.png" class="icon"></a></li>
+		<footer class="text-center">
+			<div class="row d-flex justify-content-center">
+				<ul class="d-inline-flex list-unstyled flex-wrap justify-content-center" id="footer-list">
+					<li><a href="">L'HÔTEL |</a></li>
+					<li><a href="">CHAMBRES |</a></li>
+					<li><a href="">RESTAURANT |</a></li>
+					<li><a href="">SPA |</a></li>
+					<li><a href="">RÉSERVATION |</a></li>
+					<li><a href="">AVIS |</a></li>
+					<li><a href="">ACTUALITÉS</a></li>
 				</ul>
-
 			</div>
-			<div id="copyright"  class="d-flex justify-content-center">
-				<p>© 2020 - Hotel, Paris -</p>
-				<p>Tous droits réservés.</p>
+			<div class="row text-center">
+				<div class="col-12">
+					<p>Inscrivez-vous à notre newsletter</p>
+				</div>
+				<div class="col-12 d-flex justify-content-center align-items-baseline flex-wrap">
+					<form class="d-inline-flex">
+						<input type="email">
+						<input type="submit" value="VALIDER">
+					</form>
+				</div>
+				<div class="col-12">
+					<ul class="d-inline-flex list-unstyled">
+						<li><a><img src="img/facebook.png" class="icon"></a></li>
+						<li><a><img src="img/insta.png" class="icon"></a></li>
+						<li><a><img src="img/twitter.png" class="icon"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-center">
+				<div id="copyright"  class="d-flex justify-content-center flex-wrap">
+					<p>© 2020 - Hotel, Paris -</p>
+					<p>Tous droits réservés.</p>
+				</div>
 			</div>
 
 		</footer>

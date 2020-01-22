@@ -1,4 +1,7 @@
 /* GLOBAL */
+.row {
+  margin:0;
+}
 
 a {
   color: black;
@@ -6,10 +9,6 @@ a {
 
 a:hover {
   color: black;
-}
-
-.li-no-style{
-    list-style-type: none;
 }
 
 /* HEADER */
@@ -23,8 +22,16 @@ header {
   box-shadow: 0px 0px 10px 0px;
 }
 
+header a:hover {
+  text-decoration: none;
+}
+
 header .icon{
     width: 35px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
 }
 
 /* NAV */
@@ -37,7 +44,6 @@ header .icon{
   top: 0;
   padding: 20px;
   height: 100%;
-  width: 20%;
   text-align: left;
   z-index: 3;
   position: fixed;
@@ -57,6 +63,12 @@ header .icon{
     color: white;
 }
 
+@media screen and (max-width:500px) {
+  #nav {
+    width: 100% !important;
+  }
+}
+
 /* MAIN */
 
 main {
@@ -65,128 +77,24 @@ main {
 
 main h2 {
   margin: 50px auto;
-  font-family: 'Roboto Slab', serif;
-}
-
-main img {
-  width: 100%;
 }
 
 main a {
   text-decoration: underline;
 }
 
-main .deg-entrees {
-  height: 400px;
-  background-image: url("../img/gastronomique_entree.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.8;
-}
-
-main .deg-plats {
-  height: 400px;
-  background-image: url("../img/gastronomique_plat.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.8;
-  margin-top: 100px;
-}
-
-main .deg-desserts {
-  height: 400px;
-  background-image: url("../img/gastronomique_dessert.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.8;
-  margin-top: 100px;
-}
-
-main .res-entrees {
-  height: 400px;
-  background-image: url("../img/restaurant_entree.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.8;
-}
-
-main .res-plats {
-  height: 400px;
-  background-image: url("../img/restaurant_plat.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.8;
-  margin-top: 100px;
-}
-
-main .res-desserts {
-  height: 400px;
-  background-image: url("../img/restaurant_dessert.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.8;
-  margin-top: 100px;
-}
-
-main .cocktails {
-  height: 400px;
-  background-image: url("../img/cocktails.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.8;
-}
-
-main .bieres {
-  height: 400px;
-  background-image: url("../img/bieres.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.8;
-  margin-top: 100px;
-}
-
-main .vins {
-  height: 400px;
-  background-image: url("../img/vins.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.8;
-  margin-top: 100px;
-}
-
-main h3 {
-  font-family: 'Roboto Slab', serif;
-  font-size: 50px;
-}
-
-.carte_titre {
-  position: relative;
-  top:-230px;
-}
-
 /* FOOTER */
 
 footer {
-  grid-column: 1;
-  grid-row: 3;
   background-color: black;
   color: white;
 }
 
-footer a {
+footer a, footer a:hover {
     color: white;
 }
 
-#footer-list li {
+footer li {
     padding: 12px 2px;
 }
 
@@ -204,7 +112,7 @@ footer input {
 
 footer input:last-child {
     background-color: #9a8067;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 footer .icon {
@@ -212,17 +120,76 @@ footer .icon {
     margin-right: 10px;
 }
 
+/* RESTAURATION GLOBAL */
 
+#restGlobalMain img {
+  width: 100%;
+}
 
+.titreCarteRest {
+  position: relative;
+  top:-230px;
+}
 
+.carte {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.8;
+}
 
+/* DEGUSTATION */
 
+.deg-entrees {
+  background-image: url("../img/gastronomique_entree.jpg");
+}
 
+.deg-plats {
+  background-image: url("../img/gastronomique_plat.jpg");
+  margin-top: 100px;
+}
 
-
-
-
+.deg-desserts {
+  background-image: url("../img/gastronomique_dessert.jpg");
+  margin-top: 100px;
+}
 
 /* RESTAURANT */
 
-/* MAIN */
+.res-entrees {
+  background-image: url("../img/restaurant_entree.jpg");
+}
+
+.res-plats {
+  background-image: url("../img/restaurant_plat.jpg");
+  margin-top: 100px;
+}
+
+.res-desserts {
+  background-image: url("../img/restaurant_dessert.jpg");
+  margin-top: 100px;
+}
+
+/* BRASSERIE */
+
+.cocktails {
+  background-image: url("../img/cocktails.jpg");
+  opacity: 0.8;
+}
+
+.bieres {
+  background-image: url("../img/bieres.jpg");
+  margin-top: 100px;
+}
+
+.vins {
+  background-image: url("../img/vins.jpg");
+  margin-top: 100px;
+}
+
+/* FORMULAIRES D'AVIS ET HOTEL */
+
+.btnForm {
+  background-color: #9a8067;
+}

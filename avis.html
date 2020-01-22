@@ -2,12 +2,13 @@
 <html lang="fr">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<!-- <link rel="stylesheet" href="css/style.css"/> -->
 		<link rel="stylesheet" href="css/master.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+		<script src="https://kit.fontawesome.com/c1424763f3.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header class="d-flex justify-content-between align-items-center" id="header-postion">
@@ -21,52 +22,142 @@
 			<a href="#">
 				<img src="img/cross.png" alt="cross_icon" class="icon" id="cross">
 			</a>
-			<ul class="li-no-style">
+			<ul class="list-unstyled">
 				<li><input type="text" placeholder="Recherche..."></li>
-				<li><a href="">L'HÔTEL</a></li>
+				<li><a href="hotel.html">L'HÔTEL</a></li>
 				<li><a href="">CHAMBRES</a></li>
 				<li><a href="restaurant.html">RESTAURANT</a></li>
 				<li><a href="">SPA</a></li>
 				<li><a href="">RÉSERVATION</a></li>
-				<li><a href="">AVIS</a></li>
+				<li><a href="avis.html">AVIS</a></li>
 				<li><a href="">ACUTALITÉS</a></li>
 			</ul>
 		</div>
 
-		<main>
-
+		<main class="container">
+			<div class="row">
+				<h2>AVIS</h2>
+			</div>
+			<div class="row avis">
+				<div>
+					<h4>Service impeccable</h4>
+					<p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</p>
+					<p>John S.</p>
+					<p>Hotel somptueux, magnifique rénovation. L'ensemble du personnel est bienveillant et d'un grand professionnalisme . Je recommande vivement.</p>
+					<hr>
+				</div>
+			</div>
+			<div class="row avis">
+				<div>
+					<h4>Service impeccable</h4>
+					<p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</p>
+					<p>John S.</p>
+					<p>Hotel somptueux, magnifique rénovation. L'ensemble du personnel est bienveillant et d'un grand professionnalisme . Je recommande vivement.</p>
+					<hr>
+				</div>
+			</div>
+			<div class="row avis">
+				<div>
+					<h4>Service impeccable</h4>
+					<p>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</p>
+					<p>John S.</p>
+					<p>Hotel somptueux, magnifique rénovation. L'ensemble du personnel est bienveillant et d'un grand professionnalisme . Je recommande vivement.</p>
+					<hr>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-center">
+				<form class="col-12 col-md-6">
+					<h4 class="text-center">Laisser un avis</h4>
+					<div class="form-group">
+						<label for="firstName">Prénom :</label>
+						<input type="text" name="firstName" id="firstName" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="lastName">Nom :</label>
+						<input type="text" name="lastName" id="lastName" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="customerNote">Note :</label>
+						<select class="form-control" name="customerNote" id="customerNote">
+							<option value="one">1 étoile</option>
+							<option value="two">2 étoiles</option>
+							<option value="three">3 étoiles</option>
+							<option value="four">4 étoiles</option>
+							<option value="five">5 étoiles</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="commentTitle">Titre :</label>
+						<input type="text" name="commentTitle" id="commentTitle" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="commentContent">Commentaire :</label>
+						<textarea name="commentContent" rows="3" class="form-control" id="commentContent"></textarea>
+					</div>
+					<input type="submit" name="submit" value="Envoyer" class="btn btnForm w-100 font-weight-bold" id="submitComment">
+					<p class="popUp text-center correct">Le commentaire a bien été publié.</p>
+					<p class="popUp text-center incorrect">Vous devez renseigner tous les champs du formulaire.</p>
+				</form>
+			</div>
 		</main>
 
-		<footer>
-			<ul class="d-flex justify-content-center li-no-style" id="footer-list">
-				<li><a href="">L'HÔTEL |</a></li>
-				<li><a href="">CHAMBRES |</a></li>
-				<li><a href="">RESTAURANT |</a></li>
-				<li><a href="">SPA |</a></li>
-				<li><a href="">RÉSERVATION |</a></li>
-				<li><a href="">AVIS |</a></li>
-				<li><a href="">ACTUALITÉS</a></li>
-			</ul>
-			<div class="d-flex justify-content-center align-items-baseline">
-				<form class="d-inline-flex">
-					<label>Inscrivez-vous à notre newsletter</label>
-					<input type="email">
-					<input type="submit" value="VALIDER">
-				</form>
-				<ul class="d-inline-flex li-no-style">
-					<li><a><img src="img/facebook.png" class="icon"></a></li>
-					<li><a><img src="img/insta.png" class="icon"></a></li>
-					<li><a><img src="img/twitter.png" class="icon"></a></li>
+		<footer class="text-center">
+			<div class="row d-flex justify-content-center">
+				<ul class="d-inline-flex list-unstyled flex-wrap justify-content-center" id="footer-list">
+					<li><a href="">L'HÔTEL |</a></li>
+					<li><a href="">CHAMBRES |</a></li>
+					<li><a href="">RESTAURANT |</a></li>
+					<li><a href="">SPA |</a></li>
+					<li><a href="">RÉSERVATION |</a></li>
+					<li><a href="">AVIS |</a></li>
+					<li><a href="">ACTUALITÉS</a></li>
 				</ul>
-
 			</div>
-			<div id="copyright"  class="d-flex justify-content-center">
-				<p>© 2020 - Hotel, Paris -</p>
-				<p>Tous droits réservés.</p>
+			<div class="row text-center">
+				<div class="col-12">
+					<p>Inscrivez-vous à notre newsletter</p>
+				</div>
+				<div class="col-12 d-flex justify-content-center align-items-baseline flex-wrap">
+					<form class="d-inline-flex">
+						<input type="email">
+						<input type="submit" value="VALIDER">
+					</form>
+				</div>
+				<div class="col-12">
+					<ul class="d-inline-flex list-unstyled">
+						<li><a><img src="img/facebook.png" class="icon"></a></li>
+						<li><a><img src="img/insta.png" class="icon"></a></li>
+						<li><a><img src="img/twitter.png" class="icon"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-center">
+				<div id="copyright"  class="d-flex justify-content-center flex-wrap">
+					<p>© 2020 - Hotel, Paris -</p>
+					<p>Tous droits réservés.</p>
+				</div>
 			</div>
 
 		</footer>
-		<script src="js/app.js"></script>
+		<script src="js/karla.js"></script>
 
 	</body>
 </html>
