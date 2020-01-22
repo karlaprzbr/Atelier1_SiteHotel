@@ -193,3 +193,27 @@ footer .icon {
 .btnForm {
   background-color: #9a8067;
 }
+
+/* CHAMBRES */
+
+.spacer{
+    margin-top: 50px;
+}
+
+.spacer-down{
+    margin-bottom: 50px;
+}
+
+.discover{
+    background-color: #9a8067;
+    font-size: 20px;
+    padding: 10px 25px;
+    margin-top: 100px;
+    color:white;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.discover a{
+    color:white;
+}
