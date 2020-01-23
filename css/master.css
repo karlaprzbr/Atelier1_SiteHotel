@@ -87,6 +87,10 @@ main a {
   text-decoration: underline;
 }
 
+.main2{
+  padding: 0px
+}
+
 /* FOOTER */
 
 footer {
@@ -196,6 +200,7 @@ footer .icon {
 
 .btnForm {
   background-color: #9a8067;
+  border: 0px;
 }
 
 /* CHAMBRES */
