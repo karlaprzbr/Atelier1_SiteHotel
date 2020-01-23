@@ -34,6 +34,7 @@
 			</ul>
 		</div>
 
+		<img src="img/corporate2.jpg" alt="reception" class="img-fluid headerImg">
 		<main class="container">
 			<div class="row">
 				<div class="col-12 d-flex justify-content-center">
@@ -42,7 +43,6 @@
 			</div>
 			<div class="row">
 				<div class="col-12 d-flex justify-content-center">
-					<img src="img/corporate2.jpg" alt="reception">
 				</div>
 			</div>
 			<div class="row">
@@ -58,28 +58,32 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 d-flex justify-content-between">
-					<div class="card cartes" style="width: 18rem;">
-						<div class="card-body">
-						  <h5 class="card-title">Concièrge H/F</h5>
-						  <p class="card-text">Le concierge est un employé pouvant avoir des fonctions de surveillance, d'entretien et de distribution du courrier.</p>
-						  <a href="#" class="btn btn-primary btn-carte">Postuler</a>
-						</div>
-					  </div>
-					<div class="card cartes" style="width: 18rem;">
-						<div class="card-body">
-						  <h5 class="card-title">Gouvernant(e) H/F</h5>
-						  <p class="card-text">La gouvernante est chargée de l'organisation et du contrôle du service d’entretien des chambres, et parties communes d'un hôtel.</p>
-						  <a href="#" class="btn btn-primary btn-carte">Postuler</a>
+					<div class="col-12 col-md-4">
+						<div class="card cartes">
+							<div class="card-body">
+							  <h5 class="card-title">Concièrge H/F</h5>
+							  <p class="card-text">Le concierge est un employé pouvant avoir des fonctions de surveillance, d'entretien et de distribution du courrier.</p>
+							  <a href="#" class="btn btn-primary btn-carte">Postuler</a>
+							</div>
 						</div>
 					</div>
-					<div class="card cartes" style="width: 18rem;">
-						<div class="card-body">
-						  <h5 class="card-title">Cuisinier H/F</h5>
-						  <p class="card-text">Un cuisinier (une cuisinière) peut désigner soit toute personne faisant la cuisine, soit une personne dont c’est le métier</p>
-						  <a href="#" class="btn btn-primary btn-carte">Postuler</a>
+					<div class="col-12 col-md-4">
+						<div class="card cartes">
+							<div class="card-body">
+							  <h5 class="card-title">Gouvernant(e) H/F</h5>
+							  <p class="card-text">La gouvernante est chargée de l'organisation et du contrôle du service d’entretien des chambres, et parties communes d'un hôtel.</p>
+							  <a href="#" class="btn btn-primary btn-carte">Postuler</a>
+							</div>
 						</div>
-					  </div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="card cartes">
+							<div class="card-body">
+							  <h5 class="card-title">Cuisinier H/F</h5>
+							  <p class="card-text">Un cuisinier (une cuisinière) peut désigner soit toute personne faisant la cuisine, soit une personne dont c’est le métier</p>
+							  <a href="#" class="btn btn-primary btn-carte">Postuler</a>
+							</div>
+						</div>
 				</div>
 			</div>
 			<div class="row">
@@ -95,59 +99,51 @@
 					</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-12 d-flex justify-content-center">
-					<form>
-						<div class="form-row">
-						  <div class="col-md-6 mb-3">
+				<div class="row d-flex justify-content-center">
+					<form class="col-12 col-md-6">
+						<div class="form-group">
 							<label for="validationDefault01">Prénom</label>
 							<input type="text" class="form-control" id="validationDefault01" placeholder="Prénom" value="" required>
-						  </div>
-						  <div class="col-md-6 mb-3">
+						</div>
+					 	<div class="form-group">
 							<label for="validationDefault02">Nom</label>
 							<input type="text" class="form-control" id="validationDefault02" placeholder="Nom" value="" required>
-						  </div>
-						</div>
-						<div class="form-row">
-						  <div class="col-md-6 mb-3">
+					  </div>
+						<div class="form-group">
 							<label for="validationDefault03">Téléphone</label>
 							<input type="tel" class="form-control" id="validationDefault03" placeholder="XX XX XX XX XX" required>
-						  </div>
-						  <div class="col-md-6 mb-3">
+						</div>
+					  <div class="form-group">
 							<label for="validationDefault04">Email</label>
 							<input type="email" class="form-control" id="validationDefault04" placeholder="email@email.com" required>
-						  </div>
-						  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Métier</label>
+					  </div>
+						<div class="form-group">
+							<label class="my-1 mr-2" for="inlineFormCustomSelectPref">Métier</label>
 							<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
 								<option selected>Choisissez...</option>
 								<option value="1">Réception</option>
 								<option value="2">Cuisine</option>
 								<option value="3">Intendance</option>
 							</select>
-							<br>
-							<div class="custom-file col-md-6 mb-3">
-								<input type="file" class="custom-file-input" id="validatedCustomFile" required>
-								<label class="custom-file-label" for="validatedCustomFile">Téléchargez votre CV...</label>
-								<div class="invalid-feedback">Fichier invalide</div>
-							</div>
-							<div class="custom-file col-md-6 mb-3">
-								<input type="file" class="custom-file-input" id="validatedCustomFile" required>
-								<label class="custom-file-label" for="validatedCustomFile">Télécharger votre lettre de motivation...</label>
-								<div class="invalid-feedback">Fichier invalide</div>
-							</div>
-						<div class="form-group d-flex justify-content-left">
-						  <div class="form-check">
+						</div>
+						<div class="form-group custom-file">
+							<label class="custom-file-label" for="validatedCustomFile">CV...</label>
+							<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+							<div class="invalid-feedback">Fichier invalide</div>
+						</div>
+						<div class="form-group custom-file">
+							<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+							<label class="custom-file-label" for="validatedCustomFile">Lettre de motivation...</label>
+							<div class="invalid-feedback">Fichier invalide</div>
+						</div>
+						<div class="form-group form-check">
 							<input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
 							<label class="form-check-label" for="invalidCheck2">
 							  Je confirme que les informations transmises sont exactes souhaites être rappelé.
 							</label>
-						  </div>
-						  <div class="col-md-6 mb-3">
-							<button class="btn btn-primary btn-carte" type="submit">Valider</button>
 						</div>
-						</div>
-
-					  </form>
+						<input type="submit" name="submit" value="Valider" class="btn btnForm w-100 font-weight-bold">
+					</form>
 				</div>
 			</div>
 
