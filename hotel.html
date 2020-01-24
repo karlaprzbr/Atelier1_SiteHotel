@@ -1,39 +1,48 @@
 <!DOCTYPE HTML>
 <html lang="fr">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- METAS -->
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- LINKS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<!-- <link rel="stylesheet" href="css/style.css"/> -->
 		<link rel="stylesheet" href="css/master.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+		<!-- SCRIPTS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://kit.fontawesome.com/c1424763f3.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<header class="d-flex justify-content-between align-items-center" id="header-postion">
-			<a href="#"><img id="burger" src="img/burger.png" alt="menu_icon" class="icon"></a>
-			<a href="index.html"><h1>HƟTËL</h1></a>
-			<a href="#">
-				<img src="img/world.png" alt="world_icon" class="icon">
-			</a>
-		</header>
-		<div id="nav">
-			<a href="#">
-				<img src="img/cross.png" alt="cross_icon" class="icon" id="cross">
-			</a>
-			<ul class="list-unstyled">
-				<li><input type="text" placeholder="Recherche..." class="rounded border-0"></li>
-				<li><a href="hotel.html">L'HÔTEL</a></li>
-				<li><a href="chambres.html">CHAMBRES</a></li>
-				<li><a href="restaurant.html">RESTAURANT</a></li>
-				<li><a href="spa.html">SPA</a></li>
-				<li><a href="reservation.html">RÉSERVATION</a></li>
-				<li><a href="avis.html">AVIS</a></li>
-				<li><a href="presse.html">ACUTALITÉS</a></li>
-			</ul>
-		</div>
 
+	<!-- HEADER -->
+	<header class="d-flex justify-content-between align-items-center" id="header-postion">
+		<a href="#"><img id="burger" src="img/burger.png" alt="menu_icon" class="icon"></a>
+		<a href="index.html"><h1>HƟTËL</h1></a>
+		<a href="#">
+			<img src="img/world.png" alt="world_icon" class="icon">
+		</a>
+	</header>
+
+	<!-- NAVIGATION -->
+	<div id="nav">
+		<a href="#">
+			<img src="img/cross.png" alt="cross_icon" class="icon" id="cross">
+		</a>
+		<ul class="list-unstyled">
+			<li><input type="text" placeholder="Recherche..." class="rounded border-0"></li>
+			<li><a href="hotel.html">L'HÔTEL</a></li>
+			<li><a href="chambres.html">CHAMBRES</a></li>
+			<li><a href="restaurant.html">RESTAURANT</a></li>
+			<li><a href="spa.html">SPA</a></li>
+			<li><a href="reservation.html">RÉSERVATION</a></li>
+			<li><a href="evenements.html">ÉVÉNEMENTS</a></li>
+			<li><a href="avis.html">AVIS</a></li>
+		</ul>
+	</div>
+
+		<!-- CONTENU PRINCIPAL -->
 		<img src="img/histoire.jpg" class="img-fluid headerImg" alt="lobby">
 		<main class="container main2">
       <div id="histoire" class="row">
@@ -77,16 +86,15 @@
 			</div>
     </main>
 
+		<!-- FOOTER -->
 		<footer class="text-center">
 			<div class="row d-flex justify-content-center">
 				<ul class="d-inline-flex list-unstyled flex-wrap justify-content-center" id="footer-list">
-					<li><a href="">L'HÔTEL |</a></li>
-					<li><a href="">CHAMBRES |</a></li>
-					<li><a href="">RESTAURANT |</a></li>
-					<li><a href="">SPA |</a></li>
-					<li><a href="">RÉSERVATION |</a></li>
-					<li><a href="">AVIS |</a></li>
-					<li><a href="">ACTUALITÉS</a></li>
+					<li><a href="hotel.html">CONTACT |</a></li>
+					<li><a href="recrutement.html">RECRUTEMENT |</a></li>
+					<li><a href="presse.html">PRESSE |</a></li>
+					<li><a href="mentions.html">MENTIONS LEGALES |</a></li>
+					<li><a href="#">PLAN DU SITE |</a></li>
 				</ul>
 			</div>
 			<div class="row text-center">
@@ -113,9 +121,8 @@
 					<p>Tous droits réservés.</p>
 				</div>
 			</div>
-
 		</footer>
-		<script src="js/app.js"></script>
 
+		<script src="js/app.js"></script>
 	</body>
 </html>

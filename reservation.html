@@ -1,141 +1,128 @@
  class="rounded border-0"<!DOCTYPE HTML>
 <html lang="fr">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<!-- <link rel="stylesheet" href="css/style.css"/> -->
-	<link rel="stylesheet" href="css/master.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://kit.fontawesome.com/c1424763f3.js" crossorigin="anonymous"></script>
-</head>
-	<body  id="screen">
-		<header class="d-flex justify-content-between align-items-center" id="header-postion">
-			<a href="#"><img id="burger" src="img/burger.png" alt="menu_icon" class="icon"></a>
-			<a href="index.html"><h1>HƟTËL</h1></a>
-			<a href="#">
-				<img src="img/world.png" alt="world_icon" class="icon">
-			</a>
-		</header>
-		<div id="nav">
-			<a href="#">
-				<img src="img/cross.png" alt="cross_icon" class="icon" id="cross">
-			</a>
-			<ul class="list-unstyled">
-				<li><input type="text" placeholder="Recherche..." class="rounded border-0"></li>
-				<li><a href="hotel.html">L'HÔTEL</a></li>
-				<li><a href="chambres.html">CHAMBRES</a></li>
-				<li><a href="restaurant.html">RESTAURANT</a></li>
-				<li><a href="spa.html">SPA</a></li>
-				<li><a href="reservation.html">RÉSERVATION</a></li>
-				<li><a href="avis.html">AVIS</a></li>
-				<li><a href="presse.html">ACUTALITÉS</a></li>
-			</ul>
+  <head>
+    <!-- METAS -->
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINKS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c1424763f3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
 
-        </div>
-<main class="container">
-	<div class="row">
-		<div class="col-12 d-flex justify-content-center">
-			<h2>RÉSERVATION</h2>
-		</div>
-	</div>
-    <form id="book">
-    <h3>Informations Personnelles</h3>
+    <!-- HEADER -->
+    <header class="d-flex justify-content-between align-items-center" id="header-postion">
+      <a href="#"><img id="burger" src="img/burger.png" alt="menu_icon" class="icon"></a>
+      <a href="index.html"><h1>HƟTËL</h1></a>
+      <a href="#">
+        <img src="img/world.png" alt="world_icon" class="icon">
+      </a>
+    </header>
 
-    <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="prenom">Prénom</label>
-            <input type="text" class="form-control" id="prenom" placeholder="Prénom">
-        </div>
-        <div class="form-group col-md-6">
-            <label for="prenom">Nom</label>
-            <input type="text" class="form-control" id="nom" placeholder="Nom">
-        </div>
-    </div>
-
-    <div class="form-group">
-      <label for="inputAddress">Adresse</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="rue....">
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-4">
-        <label for="inputCity">Ville</label>
-        <input type="text" class="form-control" id="inputCity">
-      </div>
-      <div class="form-group col-md-4">
-        <label for="inputZip">Code postal</label>
-        <input type="text" class="form-control" id="inputZip">
-      </div>
-      <div class="form-group col-md-4">
-        <label for="inputState">Pays</label>
-        <select id="inputState" class="form-control">
-          <option selected>Choisir</option>
-          <option>France</option>
-          <option>UE</option>
-          <option>Hors UE</option>
-        </select>
-      </div>
-    </div>
-    <h3>Demande de réservation</h3>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="example-date-input">Date d'arrivée</label>
-                <input class="form-control" type="date" value="" id="example-date-input">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="example-date-input">Date de départ</label>
-                <input class="form-control" type="date" value="" id="example-date-input">
-            </div>
-        </div>
-
-    <select id="inputChambre" class="form-control">
-        <option selected>Type de chambre</option>
-        <option>Classique</option>
-        <option>Confort</option>
-        <option>Deluxe</option>
-        <option>Suite</option>
-        </select>
-
-    <h3>Notes</h3>
-
-    <div class="form-row">
-        <div class="form-group">
-            <label for="comment">Comment:</label>
-            <textarea class="form-control" rows="5" cols="200" id="comment"></textarea>
-          </div>
-    </div>
-
-    <p>La réservation ne sera prise en compte  que après une confirmation téléphonique
-        Vérifiez le numéro de téléphone
-    </p>
-      <button type="submit" class="btn btn-primary btnForm">Réserver</button>
+    <!-- NAVIGATION -->
+    <div id="nav">
+      <a href="#">
+        <img src="img/cross.png" alt="cross_icon" class="icon" id="cross">
+      </a>
+      <ul class="list-unstyled">
+        <li><input type="text" placeholder="Recherche..." class="rounded border-0"></li>
+        <li><a href="hotel.html">L'HÔTEL</a></li>
+        <li><a href="chambres.html">CHAMBRES</a></li>
+        <li><a href="restaurant.html">RESTAURANT</a></li>
+        <li><a href="spa.html">SPA</a></li>
+        <li><a href="reservation.html">RÉSERVATION</a></li>
+        <li><a href="evenements.html">ÉVÉNEMENTS</a></li>
+        <li><a href="avis.html">AVIS</a></li>
       </ul>
-  </form>
-
-</div>
-</form>
-
-</ul>
-</div>
-
     </div>
-	    </div>
 
+    <!-- CONTENU PRINCIPAL -->
+    <main class="container">
+    	<div class="row">
+    		<div class="col-12 d-flex justify-content-center">
+    			<h2>RÉSERVATION</h2>
+    		</div>
+    	</div>
+        <form id="book">
+          <h3>Informations Personnelles</h3>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="prenom">Prénom</label>
+                <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="prenom">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="Nom">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Adresse</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="rue....">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="inputCity">Ville</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputZip">Code postal</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">Pays</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choisir</option>
+                <option>France</option>
+                <option>UE</option>
+                <option>Hors UE</option>
+              </select>
+            </div>
+          </div>
+          <h3>Demande de réservation</h3>
+          <div class="form-row">
+              <div class="form-group col-md-6">
+                  <label for="example-date-input">Date d'arrivée</label>
+                  <input class="form-control" type="date" value="" id="example-date-input">
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="example-date-input">Date de départ</label>
+                  <input class="form-control" type="date" value="" id="example-date-input">
+              </div>
+          </div>
+          <select id="inputChambre" class="form-control">
+            <option selected>Type de chambre</option>
+            <option>Classique</option>
+            <option>Confort</option>
+            <option>Deluxe</option>
+            <option>Suite</option>
+          </select>
+          <h3>Notes</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="5" cols="200" id="comment"></textarea>
+            </div>
+          </div>
+          <p>La réservation ne sera prise en compte  que après une confirmation téléphoniqueVérifiez le numéro de téléphone</p>
+          <button type="submit" class="btn btn-primary btnForm">Réserver</button>
+      </form>
+  	</main>
 
-
-    </div>
-		</main>
+    <!-- FOOTER -->
 		<footer class="text-center">
 			<div class="row d-flex justify-content-center">
 				<ul class="d-inline-flex list-unstyled flex-wrap justify-content-center" id="footer-list">
-					<li><a href="">L'HÔTEL |</a></li>
-					<li><a href="">CHAMBRES |</a></li>
-					<li><a href="">RESTAURANT |</a></li>
-					<li><a href="">SPA |</a></li>
-					<li><a href="">RÉSERVATION |</a></li>
-					<li><a href="">AVIS |</a></li>
-					<li><a href="">ACTUALITÉS</a></li>
+					<li><a href="hotel.html">CONTACT |</a></li>
+					<li><a href="recrutement.html">RECRUTEMENT |</a></li>
+					<li><a href="presse.html">PRESSE |</a></li>
+					<li><a href="mentions.html">MENTIONS LEGALES |</a></li>
+					<li><a href="#">PLAN DU SITE |</a></li>
 				</ul>
 			</div>
 			<div class="row text-center">
@@ -163,6 +150,7 @@
 				</div>
 			</div>
 		</footer>
+    
 		<script src="js/app.js"></script>
 	</body>
 </html>
