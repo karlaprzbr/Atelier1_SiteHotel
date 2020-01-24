@@ -18,11 +18,48 @@ var app = {};
  app.event = function () {
    // Navigation
    $('#burger').click(function() {
-     $('#nav').show();
+     $('#nav').show(300);
    });
    $('#cross').click(function() {
-     $('#nav').hide();
+     $('#nav').hide(300);
    });
+
+   // Animation fleche
+
+   $(document).ready(setInterval(function(){
+    $('#down-arrow').animate({
+      bottom: '20px'
+    }, 1000);
+    $('#down-arrow').animate({
+      bottom: '50px'
+    }, 1500);
+   }, 200));
+
+   // Animation cloche
+
+   $(document).ready(setInterval(function(){
+    $('#bell').animate({ deg: 45},
+      {
+        duration: 200,
+        step: function(now) {
+          $(this).css({ transform: 'rotate(' + now + 'deg)' });
+        }
+      });
+    $('#bell').animate({ deg: -45},
+      {
+        duration: 200,
+        step: function(now) {
+          $(this).css({ transform: 'rotate(' + now + 'deg)' });
+        }
+      });
+    $('#bell').animate({ deg: 0},
+      {
+        duration: 200,
+        step: function(now) {
+          $(this).css({ transform: 'rotate(' + now + 'deg)' });
+        }
+      }); 
+   }, 3000));
 
    // Formulaire de la page avis
    $(document).ready(function() {

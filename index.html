@@ -38,12 +38,13 @@
 				<li><a href="spa.html">SPA</a></li>
 				<li><a href="reservation.html">RÉSERVATION</a></li>
 				<li><a href="evenements.html">ÉVÉNEMENTS</a></li>
+				<li><a href="actualites.html">ACTUALITÉS</a></li>
 				<li><a href="avis.html">AVIS</a></li>
 			</ul>
 		</div>
 
 		<!-- CAROUSEL DE LA PAGE D'ACCUEIL -->
-		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="4000">
 			<div class="carousel-inner">
 			  <div class="carousel-item active">
 				  <img src="img/lobby.jpg" class="d-block w-100" alt="lobby">
@@ -59,8 +60,21 @@
 
 		<!-- CONTENU PRINCIPAL -->
 		<main class="container d-flex justify-content-center" id="accueilMain">
+			<div id="quote" class="btnHide">
+				<p>"May all who enter as guests leave as friends"</p>
+			</div>
+			<div id="fb-root" class="btnHide"></div>
+			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
+			<a href="#down" id="linkArrow"><img src="img/down-arrow.png" alt="world" id="down-arrow" class="btnHide"></a>
+			<a href="reservation.html"><img src="img/bell.png" alt="reserve" id="bell" class="btnHide"></a>
+			<img src="img/share.png" alt="share" id="share" class="btnHide">
+			<a href="javascript:window.print()"><img src="img/print.png" alt="print" id="print" class="btnHide"></a>
+
+			<!-- La fonctionnaltié est bien rattachée au bouton mais celui-ci disparait à cause des cookies -->
+			<!-- <div class="fb-share-button" data-href="file:///C:/Users/stagiaire/Desktop/lazst/Atelier1_SiteHotel/index.html" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"></a></div> -->
+
 			<div class="text-center spacer-down">
-				<h2>UN CADRE UNIQUE</h2>
+				<h2 id="down">UN CADRE UNIQUE</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

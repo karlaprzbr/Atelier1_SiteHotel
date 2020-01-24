@@ -32,32 +32,38 @@
 		</a>
 		<ul class="list-unstyled">
 			<li><input type="text" placeholder="Recherche..." class="rounded border-0"></li>
-			<li><a href="hotel.html">L'HÔTEL</a></li>
-			<li><a href="chambres.html">CHAMBRES</a></li>
-			<li><a href="restaurant.html">RESTAURANT</a></li>
-			<li><a href="spa.html">SPA</a></li>
-			<li><a href="reservation.html">RÉSERVATION</a></li>
-			<li><a href="evenements.html">ÉVÉNEMENTS</a></li>
-			<li><a href="avis.html">AVIS</a></li>
+				<li><a href="hotel.html">L'HÔTEL</a></li>
+				<li><a href="chambres.html">CHAMBRES</a></li>
+				<li><a href="restaurant.html">RESTAURANT</a></li>
+				<li><a href="spa.html">SPA</a></li>
+				<li><a href="reservation.html">RÉSERVATION</a></li>
+				<li><a href="evenements.html">ÉVÉNEMENTS</a></li>
+				<li><a href="actualites.html">ACTUALITÉS</a></li>
+				<li><a href="avis.html">AVIS</a></li>
 		</ul>
 	</div>
 
 	<!-- CONTENU PRINCIPAL -->
 	<main class="container">
+			<div id="fb-root" class="btnHide"></div>
+			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
+			<a href="reservation.html"><img src="img/bell.png" alt="reserve" id="bell" class="btnHide"></a>
+			<img src="img/share.png" alt="share" id="share" class="btnHide">
+			<a href="javascript:window.print()"><img src="img/print.png" alt="print" id="print" class="btnHide"></a>
 			<div class="row">
 				<div class="col-12 d-flex justify-content-center">
 					<h2>PRËSSE</h2>
 				</div>
 			</div>
-			<div class="row justify-content-center">
-				<div class="col-3 d-flex justify-content-center presse carte-presse">
+			<div class="row justify-content-between spacer-down">
+				<div class="col-12 col-md-4 d-flex justify-content-center presse carte-presse">
 					<p><strong>Agence Mega Corp</strong><br><br>5 avenue Foch<br>75016 Paris<br><br><a href="contact@megacorp.com">contact@megacorp.com</a><br><a href="tel:0152697426">0152697426</a></p>
 				</div>
-				<div class="col-3 offset-1 d-flex justify-content-center presse carte-presse">
+				<div class="col-12 col-md-4 d-flex justify-content-center presse carte-presse">
 					<p><strong>Attachée de presse</strong><br><br>Madame<br>Corinne Compta<br><br><a href="corinne.compta@hotel.com">corinne.compta@hotel.com</a><br><a href="tel:0154128563">0154128563</a></p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row spacer-down text-center">
 				<div class="col-12 d-flex justify-content-center prez" id="presse-download">
 					<a href="https://806d2bf04cf5fa54997a-e7c5344b3b84eec5da7b51276407b19c.ssl.cf1.rackcdn.com/u/lutetia/press/H--tel-Lutetia---Dossier-de-Presse-Histoire.pdf"
    download="https://806d2bf04cf5fa54997a-e7c5344b3b84eec5da7b51276407b19c.ssl.cf1.rackcdn.com/u/lutetia/press/H--tel-Lutetia---Dossier-de-Presse-Histoire.pdf" target = "_blank"><h4><u>Télécharger notre kit presse</u></h4></a>
@@ -68,12 +74,12 @@
 					<h3>Ils parlent de nous</h3>
 			</div>
 			<div class="row">
-				<div class="col-4 d-flex justify-content-center">
-					<img src="img/press.jpg">
+				<div class="col-12 d-flex justify-content-center">
+					<img src="img/press.jpg" class="w-100">
 				</div>
 			</div>
-				<div class="col-1 d-flex justify-content-center">
-					<img src="img/press3.jpg">
+				<div class="col-12 d-flex justify-content-center">
+					<img src="img/press3.jpg" class="w-100">
 				</div>
 			</div>
 		</main>

@@ -11,6 +11,16 @@ a:hover {
   color: black;
 }
 
+.btn {
+  background-color: #5F4B8B;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #9a68af ;
+  border: none;
+}
+
 /* HEADER */
 
 header {
@@ -71,6 +81,9 @@ h2, h3, h4, h5, h6 {
   #nav {
     width: 100% !important;
   }
+  .btnHide{
+    display: none;
+  }
 }
 
 /* MAIN */
@@ -85,6 +98,57 @@ main h2 {
 
 .main2{
   padding: 0px
+}
+
+/* CHEESY QUOITE */
+
+#quote{
+  position: absolute;
+  top: 400px;
+  color: white;
+  font-size: 80px;
+  font-family: "Shintaku Demo";
+  background-color: black;
+}
+
+@font-face{
+  font-family : "Shintaku Demo";
+  src : url('../font/Shintaku Demo.otf');
+}
+
+
+/* WIDGETS ANIMÉS */
+
+#down-arrow{
+  position: absolute;
+  bottom: 50px;
+  width: 40px;
+}
+
+#linkArrow{
+  position: absolute;
+  bottom: 0px;
+}
+
+#bell{
+  position: fixed;
+  bottom: 20px;
+  right: 200px;
+  width: 60px;
+}
+
+#share{
+  position: fixed;
+  bottom: 28px;
+  right: 140px;
+  width: 40px;
+}
+
+#print{
+  position: fixed;
+  bottom: 20px;
+  right: 65px;
+  width: 50px;
 }
 
 /* FOOTER */
@@ -115,7 +179,7 @@ footer input {
 }
 
 footer input:last-child {
-    background-color: #9a8067;
+    background-color: #5F4B8B;
     font-weight: bold;
 }
 
@@ -126,13 +190,10 @@ footer .icon {
 
 /* RESTAURATION GLOBAL */
 
-#restGlobalMain img {
-  width: 100%;
-}
-
 .titreCarteRest {
   position: relative;
   top:-230px;
+  font-size : 60px;
 }
 
 .carte {
@@ -195,7 +256,7 @@ footer .icon {
 /* FORMULAIRES D'AVIS ET HOTEL */
 
 .btnForm {
-  background-color: #9a8067;
+  background-color: #5F4B8B;
   border: 0px;
 }
 
@@ -210,13 +271,20 @@ footer .icon {
 }
 
 .discover{
-    background-color: #9a8067;
+    background-color: #5F4B8B;
     font-size: 20px;
     padding: 10px 25px;
     margin-top: 100px;
     color:white;
     border-radius: 2px;
     box-shadow: 2px 2px 2px gray;
+}
+
+.discover:hover {
+  background-color: #9a68af ;
+  border: none;
+  text-decoration: none;
+  color: white;
 }
 
 .discover a{
@@ -232,9 +300,17 @@ footer .icon {
 }
 
 .btn-carte{
-    background-color: #9a8067;
+    background-color: #5F4B8B;
     border:0;
     width: 100%;
+}
+
+.btn-carte a {
+  color: white !important;
+}
+
+.btn-carte a:hover {
+  color: white !important;
 }
 
 /* MENTIONS LEGALES */
@@ -255,7 +331,7 @@ footer .icon {
     border: 0;
     border-radius: 5px;
     margin-top: 30px;
-    box-shadow: 3px 3px 5px #9a8067;
+    box-shadow: 3px 3px 5px #5F4B8B;
 }
 
 .presse a{

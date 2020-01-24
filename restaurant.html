@@ -38,20 +38,26 @@
 				<li><a href="spa.html">SPA</a></li>
 				<li><a href="reservation.html">RÉSERVATION</a></li>
 				<li><a href="evenements.html">ÉVÉNEMENTS</a></li>
+				<li><a href="actualites.html">ACTUALITÉS</a></li>
 				<li><a href="avis.html">AVIS</a></li>
 			</ul>
 		</div>
 
 		<!-- CONTENU PRINCIPAL -->
-		<main class="container" id="restGlobalMain">
+		<main class="container">
+			<div id="fb-root" class="btnHide"></div>
+			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
+			<a href="reservation.html"><img src="img/bell.png" alt="reserve" id="bell" class="btnHide"></a>
+			<img src="img/share.png" alt="share" id="share" class="btnHide">
+			<a href="javascript:window.print()"><img src="img/print.png" alt="print" id="print" class="btnHide"></a>
 			<div class="row text-center">
 				<h2>LA RESTAURATION A L'HÔTEL</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 			<hr>
-			<div class="row">
+			<div class="row spacer-down">
 				<div class="col-12 col-md-4">
-					<a href="carte-brasserie.html"><img src="img/brasserie.jpg" alt="Photo de la brasserie"></a>
+					<a href="carte-brasserie.html"><img src="img/brasserie.jpg" alt="Photo de la brasserie" class="w-100"></a>
 				</div>
 				<div class="col-12 col-md-8">
 					<h3>Brasserie</h3>
@@ -59,19 +65,19 @@
 					<a href="carte-brasserie.html" class="btn btn-primary">Découvrir la carte brasserie</a>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row spacer-down">
 				<div class="col-12 order-2 col-md-8 order-md-1 text-right">
 					<h3>Dégustation</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<a href="carte-degustation.html" class="btn btn-primary">Découvrir la carte dégustation</a>
 				</div>
 				<div class="col-12 order-1 col-md-4 order-md-2">
-					<a href="carte-degustation.html"><img src="img/gastronomie.jpg" alt="Photo d'un plat gastronomique"></a>
+					<a href="carte-degustation.html"><img src="img/gastronomie.jpg" alt="Photo d'un plat gastronomique" class="w-100"></a>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row spacer-down">
 				<div class="col-12 col-md-4">
-					<a href="carte-restaurant.html"><img src="img/restaurant.jpg" alt="Photo du restaurant"></a>
+					<a href="carte-restaurant.html"><img src="img/restaurant.jpg" alt="Photo du restaurant" class="w-100"></a>
 				</div>
 				<div class="col-12 col-md-8">
 					<h3>Restaurant</h3>
